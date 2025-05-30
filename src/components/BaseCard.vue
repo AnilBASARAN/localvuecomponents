@@ -2,7 +2,9 @@
     
     <div>
         <header>
-            <slot name="header"></slot>
+            <slot name="header">
+              <!-- <h2>The Default</h2> -->
+            </slot>
         </header>
      <!--    you dont need to name all slots but you can only have 
         one unnamed slot which would be a default slot -->
