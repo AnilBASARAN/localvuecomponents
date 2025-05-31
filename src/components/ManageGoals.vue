@@ -7,6 +7,7 @@
     <error-alert v-if="inputIsInvalid">
       <h2>Input is invalid!</h2>
       <p>Please enter at least 2 characters...</p>
+      <button @click="confirmError">Okay</button>
     </error-alert>
   </div>
 </template>
@@ -31,6 +32,9 @@ export default {
       this.inputIsInvalid = false;
       // handle your new goal here...
       this.enteredValue = "";
+    },
+    confirmError(){
+      this.inputIsInvalid = false;
     }
   }
 };
