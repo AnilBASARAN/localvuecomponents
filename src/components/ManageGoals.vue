@@ -4,11 +4,16 @@
     <input type="text" v-model="enteredValue" />
     <button @click="setGoal">Set Goal</button>
 
-    <error-alert v-if="inputIsInvalid">
+    <teleport to="" >
+
+       <error-alert v-if="inputIsInvalid">
       <h2>Input is invalid!</h2>
       <p>Please enter at least 2 characters...</p>
       <button @click="confirmError">Okay</button>
     </error-alert>
+
+    </teleport>
+   
   </div>
 </template>
 
